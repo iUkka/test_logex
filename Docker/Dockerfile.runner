@@ -1,0 +1,5 @@
+# escape=`
+FROM base_redgate:latest
+COPY "Docker/powershell" "/"
+
+ENTRYPOINT ["powershell", "-file"]
